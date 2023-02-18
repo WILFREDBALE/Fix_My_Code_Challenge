@@ -1,11 +1,7 @@
 #!/usr/bin/python3
-
+""" FizzBuzz
 """
-FizzBuzz
-"""
-
 import sys
-
 
 def fizzbuzz(n):
     """
@@ -29,9 +25,8 @@ def fizzbuzz(n):
             tmp_result.append(str(i))
     print(" ".join(tmp_result))
 
-
 if __name__ == '__main__':
-    if len(sys.argv) < 2:
+    if len(sys.argv) <= 1:
         print("Missing number")
         print("Usage: ./fizzbuzz.py <number>")
         print("Example: ./fizzbuzz.py 89")
